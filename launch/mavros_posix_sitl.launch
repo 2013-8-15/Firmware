@@ -30,6 +30,7 @@
         <arg name="Y" value="$(arg Y)"/>
         <arg name="world" value="$(arg world)"/>
         <arg name="vehicle" value="$(arg vehicle)"/>
+        <arg name="sdf" value="$(arg sdf)"/>
         <arg name="rcS" value="$(arg rcS)"/>
         <arg name="headless" value="$(arg headless)"/>
         <arg name="gui" value="$(arg gui)"/>
