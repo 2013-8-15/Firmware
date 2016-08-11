@@ -31,13 +31,14 @@
 #
 ############################################################################
 px4_add_module(
-	MODULE modules__mc_att_control_multiplatform
-	MAIN mc_att_control_m
+	MODULE examples__attitude_estimator_ekf
+	MAIN attitude_estimator_ekf
+	STACK_MAIN 1200
+	COMPILE_FLAGS
+		-Wno-float-equal
 	SRCS
-		mc_att_control_main.cpp
-		mc_att_control_start_nuttx.cpp
-		mc_att_control.cpp
-		mc_att_control_base.cpp
+		attitude_estimator_ekf_main.cpp
+		codegen/AttitudeEKF.c
 	DEPENDS
 		platforms__common
 	)
